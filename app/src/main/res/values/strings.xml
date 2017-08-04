@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Contacts</string>
+    <string name="name">Name:</string>
+    <string name="mobile">Mobile:</string>
+    <string name="landline">Landline:</string>
+    <string name="activity_details_landline_label">Landline number:</string>
+    <string name="activity_details_mobile_label">Mobile number:</string>
+</resources>
