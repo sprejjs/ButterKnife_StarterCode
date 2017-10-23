@@ -1,4 +1,4 @@
-package com.spreys.viewholderexample;
+package com.spreys.butterknife;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

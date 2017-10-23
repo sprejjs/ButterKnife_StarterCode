@@ -1,4 +1,4 @@
-package com.spreys.viewholderexample.Model;
+package com.spreys.butterknife.Model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +29,7 @@ public class MockDataGenerator {
         return mockContacts;
     }
 
-    private static Contact getMockContact() {
+    public static Contact getMockContact() {
         return new Contact(
                 getRandomFirstName(),
                 getRandomLastName(),

@@ -1,4 +1,4 @@
-package com.spreys.viewholderexample;
+package com.spreys.butterknife;
 
 import org.junit.Test;
 

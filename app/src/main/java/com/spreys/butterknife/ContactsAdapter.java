@@ -1,4 +1,4 @@
-package com.spreys.viewholderexample;
+package com.spreys.butterknife;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,16 +9,14 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.spreys.viewholderexample.Model.Contact;
+import com.spreys.butterknife.Model.Contact;
 
 import java.util.List;
 
 public class ContactsAdapter extends ArrayAdapter<Contact> {
-    private List<Contact> contacts;
 
     public ContactsAdapter(Context context, List<Contact> contacts) {
-        super(context, -1);
-        this.contacts = contacts;
+        super(context, -1, contacts);
     }
 
     @NonNull
@@ -38,7 +36,7 @@ public class ContactsAdapter extends ArrayAdapter<Contact> {
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        Contact contact = contacts.get(position);
+        Contact contact = getItem(position);
 
         viewHolder.nameTextView.setText(contact.getName());
         viewHolder.mobileTextView.setText(contact.getMobile());
@@ -47,23 +45,16 @@ public class ContactsAdapter extends ArrayAdapter<Contact> {
         return convertView;
     }
 
-    @Override
-    public int getCount() {
-        return this.contacts.size();
-    }
-
     class ViewHolder {
-        private TextView nameTextView;
-        private TextView mobileTextView;
-        private TextView landlineTextView;
+        TextView nameTextView;
+        TextView mobileTextView;
+        TextView landlineTextView;
 
         public ViewHolder(@NonNull View view) {
-            this.nameTextView = (TextView)view
-                    .findViewById(R.id.name_text_view);
-            this.mobileTextView = (TextView)view
-                    .findViewById(R.id.mobile_text_view);
-            this.landlineTextView = (TextView)view
-                    .findViewById(R.id.landline_text_view);
+            //TODO: Step 4: Update the view holder
+            nameTextView = (TextView)view.findViewById(R.id.name_text_view);
+            mobileTextView = (TextView)view.findViewById(R.id.mobile_text_view);
+            landlineTextView = (TextView)view.findViewById(R.id.landline_text_view);
         }
     }
 }

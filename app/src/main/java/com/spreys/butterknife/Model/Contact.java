@@ -1,4 +1,4 @@
-package com.spreys.viewholderexample.Model;
+package com.spreys.butterknife.Model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
