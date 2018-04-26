@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ButterKnife_StarterCode.iml" filepath="$PROJECT_DIR$/ButterKnife_StarterCode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/RecyclerView_StarterCode.iml" filepath="$PROJECT_DIR$/RecyclerView_StarterCode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ViewHolderExample.iml" filepath="$PROJECT_DIR$/ViewHolderExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ViewHolderExample_Completed.iml" filepath="$PROJECT_DIR$/ViewHolderExample_Completed.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
